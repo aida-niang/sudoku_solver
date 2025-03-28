@@ -1,4 +1,4 @@
-git import settings
+import settings
 import pygame
 
 class Sudoku:
