@@ -1,6 +1,6 @@
 # Explanation of Sudoku Solving Algorithms
 
-![preview main](./frame_5.png)
+![preview main](./frame_1.png)
 
 # Description
 This project is a graphical Sudoku solver built using Pygame. It allows users to visualize the Sudoku board and solve it using two different solving algorithms:
