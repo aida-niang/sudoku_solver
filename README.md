@@ -1,6 +1,42 @@
 # Explanation of Sudoku Solving Algorithms
 
-## 1. Problem Modelling
+![preview main](./frame_5.png)
+
+# Description
+This project is a graphical Sudoku solver built using Pygame. It allows users to visualize the Sudoku board and solve it using two different solving algorithms:
+- Backtracking Algorithm – A depth-first search algorithm that efficiently finds a solution.
+- Brute Force Algorithm – A less efficient approach that tries all possible combinations.
+
+# Features
+- Graphical Interface: The Sudoku board is displayed using Pygame, with clearly marked cells and buttons for user interaction.
+- Two Solving Methods: Users can choose between the Backtracking or Brute Force algorithm to solve the puzzle.
+- Interactive Highlighting: The selected cell is highlighted for better visibility.
+- Real-Time Visualization: The solving process can be visualized to see how the algorithm fills in the missing numbers.
+
+# Technologies Used
+- Python (Programming Language)
+- Pygame (For graphical display)
+
+# Project Structure
+```
+Sudoku-Solver/
+│── sudoku.py                  # Main Sudoku class (handles board display and user interactions)
+│── backtracking_solver.py     # Backtracking algorithm for solving Sudoku
+│── brute_force_solver.py      # Brute force algorithm for solving Sudoku
+│── settings.py                # Configuration file (colors, screen size, fonts, etc.)
+│── main.py                    # Runs the game loop and handles events
+```
+
+# How It Works
+1. The user loads a Sudoku puzzle into the grid.
+The interface displays the puzzle with a clear layout.
+The user selects one of the two solving algorithms by clicking a button.
+The selected algorithm processes the grid and fills in the missing numbers.
+The solved puzzle is displayed in the interface.
+
+
+# Analysis
+## Problem Modelling
 
 A Sudoku is a 9×9 grid where each cell contains a number between 1 and 9, or is empty (denoted by 0). The goal is to fill the grid while respecting the following rules:
 
@@ -20,7 +56,7 @@ In other words, each element of the matrix, \( M_{i,j} \), must satisfy the foll
 - A number must appear only once per column \( j \),
 - A number must appear only once in each 3x3 subgrid.
 
-## 2. Backtracking Algorithm
+## Backtracking Algorithm
 
 ### General Idea
 
